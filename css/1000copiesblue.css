@@ -20,48 +20,53 @@ h1 {
 }
 
 .flyout1 {
-    background-color: yellow;
+    background-color: #ffcc29;
     height: 44px;
-    width: 180px;
+    width: 1px;
     position: absolute;
     top: 49px;
     left: 0;
+    opacity: 0;
 }
 
 .flyout2 {
-    background-color: yellow;
+    background-color: #457879;
     height: 117.2px;
-    width: 180px;
+    width: 1px;
     position: absolute;
     top: 0;
     right: 0;
+    opacity: 0;
 }
 
 .flyout3 {
-    background-color: yellow;
+    background-color: #ffcc29;
     height: 45.5px;
-    width: 180px;
+    width: 1px;
     position: absolute;
     top: 139px;
     right: 0;
+    opacity: 0;
 }
 
 .flyout4 {
-    background-color: yellow;
+    background-color: #ddcfad;
     height: 58px;
-    width: 180px;
+    width: 1px;
     position: absolute;
     top: 260.5px;
-    left: 0;
+    left: 26px;
+    opacity: 0;
 }
 
 .flyout5 {
-    background-color: yellow;
+    background-color: #ddcfad;
     height: 58px;
-    width: 180px;
+    width: 1px;
     position: absolute;
     top: 260.5px;
-    right: 0;
+    right: 27px;
+    opacity: 0;
 }
 
 .whiteline {
@@ -175,10 +180,10 @@ h1 {
         transform: translateY(0);
     }
     90% {
-        opacity: 0.5;
+        opacity: 0.8;
     }
     100% {
-        opacity: 0.5;
+        opacity: 1;
         transform: translateY(0);
     }
 }
