@@ -70,7 +70,7 @@ h1 {
     width: 1px;
     position: absolute;
     top: 261px;
-    left: 26px;
+    right: 27px;
     opacity: 0;
     z-index: 1;
 }
@@ -404,13 +404,13 @@ h1 {
         z-index: 1;
     }
     .flyout5 {
-        transform: translateX(30px);
+        transform: translateX(-210px);
         background-color: #ddcfad;
         height: 58px;
         width: 1px;
         position: absolute;
         top: 261px;
-        left: 26px;
+        right: 27px;
         opacity: 0;
         z-index: 1;
     }
