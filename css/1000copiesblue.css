@@ -21,15 +21,16 @@ h1 {
 
 .flyout1 {
     background-color: #ffcc29;
-    height: 44px;
+    height: 45px;
     width: 1px;
     position: absolute;
-    top: 49px;
+    top: 48px;
     left: 0;
     opacity: 0;
 }
 
 .flyout2 {
+    transform: translateX(-180px);
     background-color: #457879;
     height: 117.2px;
     width: 1px;
@@ -40,8 +41,9 @@ h1 {
 }
 
 .flyout3 {
+    transform: translateX(-222px);
     background-color: #ffcc29;
-    height: 45.5px;
+    height: 46.5px;
     width: 1px;
     position: absolute;
     top: 139px;
@@ -50,6 +52,7 @@ h1 {
 }
 
 .flyout4 {
+    transform: translateX(-150px);
     background-color: #ddcfad;
     height: 58px;
     width: 1px;
@@ -57,9 +60,11 @@ h1 {
     top: 260.5px;
     left: 26px;
     opacity: 0;
+    z-index: 1;
 }
 
 .flyout5 {
+    transform: translateX(-50px);
     background-color: #ddcfad;
     height: 58px;
     width: 1px;
@@ -67,6 +72,7 @@ h1 {
     top: 260.5px;
     right: 27px;
     opacity: 0;
+    z-index: 1;
 }
 
 .whiteline {
@@ -142,6 +148,10 @@ h1 {
     width: 100%;
 }
 
+.flyoutimg {
+    height: 100%;
+}
+
 .whiteline {
     -webkit-animation-name: slidingline;
     animation-name: slidingline;
@@ -204,5 +214,155 @@ h1 {
     100% {
         opacity: 1;
         transform: scaleX(60);
+    }
+}
+
+.flyout1 {
+    animation-name: flyoutone;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 4s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+}
+
+.flyout2 {
+    animation-name: flyouttwo;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 7s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+}
+
+.flyout3 {
+    animation-name: flyoutthree;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 10s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+}
+
+.flyout4 {
+    animation-name: flyoutfour;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 13s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+}
+
+.flyout5 {
+    animation-name: flyoutfive;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 16s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+}
+
+@keyframes flyoutone {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+        transform: translateX(-222px);
+        transform-origin: top right;
+    }
+    70% {
+        opacity: 1;
+        transform: translateX(-222px);
+        transform-origin: top right;
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(0);
+        transform-origin: top right;
+    }
+}
+
+@keyframes flyouttwo {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+        transform: translateX(0);
+        transform-origin: top left;
+    }
+    70% {
+        opacity: 1;
+        transform: translateX(0);
+        transform-origin: top left;
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-180px);
+        transform-origin: top left;
+    }
+}
+
+@keyframes flyoutthree {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+        transform: translateX(0);
+        transform-origin: top left;
+    }
+    70% {
+        opacity: 1;
+        transform: translateX(0);
+        transform-origin: top left;
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-222px);
+        transform-origin: top left;
+    }
+}
+
+@keyframes flyoutfour {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+        transform: translateX(-200px);
+        transform-origin: top right;
+    }
+    70% {
+        opacity: 1;
+        transform: translateX(-200px);
+        transform-origin: top right;
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-150px);
+        transform-origin: top right;
+    }
+}
+
+@keyframes flyoutfive {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+        transform: translateX(0);
+        transform-origin: top left;
+    }
+    70% {
+        opacity: 1;
+        transform: translateX(0);
+        transform-origin: top left;
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-50px);
+        transform-origin: top left;
     }
 }
