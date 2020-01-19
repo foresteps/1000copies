@@ -57,7 +57,7 @@ h1 {
     height: 58px;
     width: 1px;
     position: absolute;
-    top: 260.5px;
+    top: 261px;
     left: 26px;
     opacity: 0;
     z-index: 1;
@@ -69,8 +69,8 @@ h1 {
     height: 58px;
     width: 1px;
     position: absolute;
-    top: 260.5px;
-    right: 27px;
+    top: 261px;
+    left: 26px;
     opacity: 0;
     z-index: 1;
 }
@@ -108,7 +108,6 @@ h1 {
     letter-spacing: 1px;
     padding: 15px 60px;
     margin: 0 auto;
-    /* border-radius: 20px; */
     box-shadow: -3px 4px #37a4ae;
 }
 
@@ -118,7 +117,6 @@ h1 {
     left: -2px;
     background-color: white;
     color: #55c0ca;
-    /* border: none; */
 }
 
 .mybutton:active {
@@ -135,12 +133,6 @@ h1 {
     background-color: white;
     transform: translateY(-400px);
     opacity: 0;
-    /* margin: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 13%;
-    right: 0; */
 }
 
 .flyerimg {
@@ -364,5 +356,172 @@ h1 {
         opacity: 0;
         transform: translateX(-50px);
         transform-origin: top left;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .flyout1 {
+        background-color: #ffcc29;
+        height: 45px;
+        width: 1px;
+        position: absolute;
+        top: 48px;
+        left: 0;
+        opacity: 0;
+        z-index: 1;
+    }
+    .flyout2 {
+        transform: translateX(-289px);
+        background-color: #457879;
+        height: 117.2px;
+        width: 1px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        opacity: 0;
+        z-index: 1;
+    }
+    .flyout3 {
+        transform: translateX(-260px);
+        background-color: #ffcc29;
+        height: 45.5px;
+        width: 1px;
+        position: absolute;
+        top: 139px;
+        right: 0;
+        opacity: 0;
+        z-index: 1;
+    }
+    .flyout4 {
+        transform: translateX(0);
+        background-color: #ddcfad;
+        height: 58px;
+        width: 1px;
+        position: absolute;
+        top: 261px;
+        left: 26px;
+        opacity: 0;
+        z-index: 1;
+    }
+    .flyout5 {
+        transform: translateX(30px);
+        background-color: #ddcfad;
+        height: 58px;
+        width: 1px;
+        position: absolute;
+        top: 261px;
+        left: 26px;
+        opacity: 0;
+        z-index: 1;
+    }
+    .flyout1 {
+        animation-name: flyoutone;
+        animation-duration: 5s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 4s;
+        animation-iteration-count: 1;
+        animation-direction: alternate;
+    }
+    .flyout2 {
+        animation-name: flyouttwo;
+        animation-duration: 5s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 7s;
+        animation-iteration-count: 1;
+        animation-direction: alternate;
+    }
+    .flyout3 {
+        animation-name: flyoutthree;
+        animation-duration: 5s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 10s;
+        animation-iteration-count: 1;
+        animation-direction: alternate;
+    }
+    .flyout4 {
+        animation-name: flyoutfour;
+        animation-duration: 5s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 13s;
+        animation-iteration-count: 1;
+        animation-direction: alternate;
+    }
+    .flyout5 {
+        animation-name: flyoutfive;
+        animation-duration: 5s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 16s;
+        animation-iteration-count: 1;
+        animation-direction: alternate;
+    }
+    @keyframes flyoutone {
+        0% {
+            opacity: 0;
+        }
+        30% {
+            opacity: 1;
+        }
+        70% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+    @keyframes flyouttwo {
+        0% {
+            opacity: 0;
+        }
+        30% {
+            opacity: 1;
+        }
+        70% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+    @keyframes flyoutthree {
+        0% {
+            opacity: 0;
+        }
+        30% {
+            opacity: 1;
+        }
+        70% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+    @keyframes flyoutfour {
+        0% {
+            opacity: 0;
+        }
+        30% {
+            opacity: 1;
+        }
+        70% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+    @keyframes flyoutfive {
+        0% {
+            opacity: 0;
+        }
+        30% {
+            opacity: 1;
+        }
+        70% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
     }
 }
