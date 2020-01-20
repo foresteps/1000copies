@@ -359,6 +359,23 @@ h1 {
     }
 }
 
+.removeflyer {
+    animation-duration: 2s;
+    animation-name: spinout;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes spinout {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(1080deg) scale(0);
+    }
+}
+
 @media screen and (max-width: 992px) {
     .flyout1 {
         background-color: #ffcc29;
