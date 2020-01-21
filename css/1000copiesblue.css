@@ -11,7 +11,7 @@ h1 {
 
 .fullcontainer {
     position: relative;
-    height: 75vh;
+    height: 70vh;
     width: 100vw;
 }
 
@@ -121,7 +121,7 @@ h1 {
     text-transform: uppercase;
     letter-spacing: 1px;
     padding: 10px 40px;
-    margin: 15% auto 10% auto;
+    margin: 15% auto 20% auto;
     box-shadow: -3px 4px #37a4ae;
 }
 
