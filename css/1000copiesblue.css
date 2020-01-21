@@ -12,7 +12,7 @@ h1 {
 .fullcontainer {
     position: relative;
     height: 70vh;
-    width: 100vw;
+    /* width: 100vw; */
 }
 
 .lineandflyer {
