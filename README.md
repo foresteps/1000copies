@@ -1,2 +1,2 @@
-# 1000copies.xyz
-The home of top quality affordable flyers
+# flyerpadi
+Your One-Stop Shop for Top Quality flyers
