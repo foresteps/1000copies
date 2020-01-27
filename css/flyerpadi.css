@@ -1,0 +1,569 @@
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+    background-color: #55c0ca;
+    color: white;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.login-div {
+    flex: 1;
+}
+
+.signup-div {
+    flex: 1;
+}
+
+.guest-div {
+    flex: 1;
+}
+
+.fullcontainer {
+    position: relative;
+    height: 70vh;
+    /* width: 100vw; */
+}
+
+.lineandflyer {
+    position: absolute;
+    height: 400px;
+    width: 290px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    /* margin: 7% auto 0 auto; */
+}
+
+.flyoutwrapper {
+    position: relative;
+}
+
+.flyout1 {
+    background-color: #ffcc29;
+    height: 45px;
+    width: 1px;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    opacity: 0;
+}
+
+.flyout2 {
+    transform: translateX(-180px);
+    background-color: #457879;
+    height: 117.2px;
+    width: 1px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+}
+
+.flyout3 {
+    transform: translateX(-222px);
+    background-color: #ffcc29;
+    height: 46.5px;
+    width: 1px;
+    position: absolute;
+    top: 139px;
+    right: 0;
+    opacity: 0;
+}
+
+.flyout4 {
+    transform: translateX(-150px);
+    background-color: #ddcfad;
+    height: 58px;
+    width: 1px;
+    position: absolute;
+    top: 261px;
+    left: 26px;
+    opacity: 0;
+    z-index: 1;
+}
+
+.flyout5 {
+    transform: translateX(-50px);
+    background-color: #ddcfad;
+    height: 58px;
+    width: 1px;
+    position: absolute;
+    top: 261px;
+    right: 27px;
+    opacity: 0;
+    z-index: 1;
+}
+
+.whiteline {
+    position: relative;
+    margin: 0 auto;
+    height: 1.5px;
+    width: 10px;
+    background-color: white;
+    opacity: 0;
+}
+
+
+/* .btnwrapper {
+    margin: auto;
+    position: absolute;
+    top: 83%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+} */
+
+.mybutton {
+    outline: none;
+    border: 3px solid white;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    background-color: white;
+    /* background-color: #55c0ca; */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: 300;
+    color: #55c0ca;
+    /* color: white; */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px 40px;
+    margin: 15% auto 20% auto;
+    box-shadow: -3px 4px #37a4ae;
+}
+
+.mybutton:hover {
+    box-shadow: -1px 2px #37a4ae;
+    top: 2px;
+    left: -2px;
+    background-color: white;
+    color: #55c0ca;
+}
+
+.mybutton:active {
+    box-shadow: none;
+    top: 6px;
+    left: -4px;
+}
+
+.flyer {
+    position: relative;
+    margin: 0 auto;
+    height: 400px;
+    width: 290px;
+    background-color: white;
+    transform: translateY(-400px);
+    opacity: 0;
+}
+
+.flyerimg {
+    height: 100%;
+    width: 100%;
+}
+
+.flyoutimg {
+    height: 100%;
+}
+
+.whiteline {
+    -webkit-animation-name: slidingline;
+    animation-name: slidingline;
+    -webkit-animation-duration: 10s;
+    animation-duration: 10s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+.flyer {
+    -webkit-animation-name: enterflyer;
+    animation-name: enterflyer;
+    -webkit-animation-duration: 10s;
+    animation-duration: 10s;
+    -webkit-animation-timing-function: cubic-bezier(0.27, 0.37, 0.24, 1.02);
+    animation-timing-function: cubic-bezier(0.27, 0.37, 0.24, 1.02);
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@keyframes enterflyer {
+    0% {
+        opacity: 0;
+        transform: translateY(-400px);
+    }
+    30% {
+        opacity: 0.5;
+        transform: translateY(0);
+    }
+    90% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slidingline {
+    0% {
+        opacity: 0;
+        transform: scaleX(0);
+    }
+    30% {
+        opacity: 0.5;
+        transform: scaleX(60);
+    }
+    90% {
+        opacity: 0.8;
+        transform: scaleX(60);
+    }
+    100% {
+        opacity: 1;
+        transform: scaleX(60);
+    }
+}
+
+.flyout1 {
+    animation-name: flyoutone;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 4s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+}
+
+.flyout2 {
+    animation-name: flyouttwo;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 7s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+}
+
+.flyout3 {
+    animation-name: flyoutthree;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 10s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+}
+
+.flyout4 {
+    animation-name: flyoutfour;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 13s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+}
+
+.flyout5 {
+    animation-name: flyoutfive;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 16s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+}
+
+@keyframes flyoutone {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+        transform: translateX(-222px);
+        transform-origin: top right;
+    }
+    70% {
+        opacity: 1;
+        transform: translateX(-222px);
+        transform-origin: top right;
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(0);
+        transform-origin: top right;
+    }
+}
+
+@keyframes flyouttwo {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+        transform: translateX(0);
+        transform-origin: top left;
+    }
+    70% {
+        opacity: 1;
+        transform: translateX(0);
+        transform-origin: top left;
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-180px);
+        transform-origin: top left;
+    }
+}
+
+@keyframes flyoutthree {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+        transform: translateX(0);
+        transform-origin: top left;
+    }
+    70% {
+        opacity: 1;
+        transform: translateX(0);
+        transform-origin: top left;
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-222px);
+        transform-origin: top left;
+    }
+}
+
+@keyframes flyoutfour {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+        transform: translateX(-200px);
+        transform-origin: top right;
+    }
+    70% {
+        opacity: 1;
+        transform: translateX(-200px);
+        transform-origin: top right;
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-150px);
+        transform-origin: top right;
+    }
+}
+
+@keyframes flyoutfive {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+        transform: translateX(0);
+        transform-origin: top left;
+    }
+    70% {
+        opacity: 1;
+        transform: translateX(0);
+        transform-origin: top left;
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-50px);
+        transform-origin: top left;
+    }
+}
+
+.removeflyer {
+    animation-duration: 1s;
+    animation-name: spinout;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes spinout {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(1080deg) scale(0);
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .flyout1 {
+        background-color: #ffcc29;
+        height: 45px;
+        width: 1px;
+        position: absolute;
+        top: 48px;
+        left: 0;
+        opacity: 0;
+        z-index: 1;
+    }
+    .flyout2 {
+        transform: translateX(-289px);
+        background-color: #457879;
+        height: 117.2px;
+        width: 1px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        opacity: 0;
+        z-index: 1;
+    }
+    .flyout3 {
+        transform: translateX(-260px);
+        background-color: #ffcc29;
+        height: 45.5px;
+        width: 1px;
+        position: absolute;
+        top: 139px;
+        right: 0;
+        opacity: 0;
+        z-index: 1;
+    }
+    .flyout4 {
+        transform: translateX(0);
+        background-color: #ddcfad;
+        height: 58px;
+        width: 1px;
+        position: absolute;
+        top: 261px;
+        left: 26px;
+        opacity: 0;
+        z-index: 1;
+    }
+    .flyout5 {
+        transform: translateX(-210px);
+        background-color: #ddcfad;
+        height: 58px;
+        width: 1px;
+        position: absolute;
+        top: 261px;
+        right: 27px;
+        opacity: 0;
+        z-index: 1;
+    }
+    .flyout1 {
+        animation-name: flyoutone;
+        animation-duration: 5s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 4s;
+        animation-iteration-count: 1;
+        animation-direction: alternate;
+    }
+    .flyout2 {
+        animation-name: flyouttwo;
+        animation-duration: 5s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 7s;
+        animation-iteration-count: 1;
+        animation-direction: alternate;
+    }
+    .flyout3 {
+        animation-name: flyoutthree;
+        animation-duration: 5s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 10s;
+        animation-iteration-count: 1;
+        animation-direction: alternate;
+    }
+    .flyout4 {
+        animation-name: flyoutfour;
+        animation-duration: 5s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 13s;
+        animation-iteration-count: 1;
+        animation-direction: alternate;
+    }
+    .flyout5 {
+        animation-name: flyoutfive;
+        animation-duration: 5s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 16s;
+        animation-iteration-count: 1;
+        animation-direction: alternate;
+    }
+    @keyframes flyoutone {
+        0% {
+            opacity: 0;
+        }
+        30% {
+            opacity: 1;
+        }
+        70% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+    @keyframes flyouttwo {
+        0% {
+            opacity: 0;
+        }
+        30% {
+            opacity: 1;
+        }
+        70% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+    @keyframes flyoutthree {
+        0% {
+            opacity: 0;
+        }
+        30% {
+            opacity: 1;
+        }
+        70% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+    @keyframes flyoutfour {
+        0% {
+            opacity: 0;
+        }
+        30% {
+            opacity: 1;
+        }
+        70% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+    @keyframes flyoutfive {
+        0% {
+            opacity: 0;
+        }
+        30% {
+            opacity: 1;
+        }
+        70% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+}
